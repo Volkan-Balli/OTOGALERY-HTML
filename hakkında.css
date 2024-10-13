@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #dcdbd4fc;
+}
+
+.header {
+    position: relative;
+    height: 100px;
+    overflow: hidden;
+    color: white;
+    text-align: left;
+    padding: 20px;
+}
+
+.header img {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.header img::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-content h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.header-volkan {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    z-index: 3;
+    text-align: right;
+}
+
+.header-volkan a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.header-volkan a:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #141301;
+    transform: scale(1.1);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.centere-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin: 0px 0;
+    color: rgba(255, 255, 255, 0.736);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 4px solid #ffffff;
+    padding-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.541);
+    padding: 20px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    height: 200px;
+    position: relative;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.footer img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+    z-index: 1;
+}
+
+.footer-content {
+    position: relative;
+    z-index: 2;
+    padding: 20px;
+}
+
+.about-section {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-section h5 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 10px;
+}
+
+.about-section p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #555;
+    margin: 10px 0;
+}
